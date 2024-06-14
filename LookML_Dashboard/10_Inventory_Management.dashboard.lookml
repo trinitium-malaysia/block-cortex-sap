@@ -14,7 +14,7 @@
     fields: [inventory_by_plant.stock_characteristic, inventory_by_plant.sum_inventory_value_target_currency]
     filters:
       #inventory_by_plant.week_end_date: today
-      inventory_by_plant.week_end_date: "2022-06-15"
+      inventory_by_plant.week_end_date: "2022-06-18"
     sorts: [inventory_by_plant.sum_inventory_value_target_currency desc 0]
     limit: 500
     column_limit: 50
@@ -56,7 +56,7 @@
     fields: [inventory_by_plant.sum_obsolete_value_target_currency, inventory_by_plant.sum_inventory_value_target_currency]
     filters:
       #inventory_by_plant.week_end_date: today
-      inventory_by_plant.week_end_date: "2022-06-15"
+      inventory_by_plant.week_end_date: "2022-06-18"
 
     limit: 500
     column_limit: 50
