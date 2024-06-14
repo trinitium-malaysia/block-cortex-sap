@@ -505,7 +505,8 @@
       filters:
         inventory_metrics_overview.plant_name2_name2: ''
         inventory_metrics_overview.country_key_land1: ''
-        inventory_metrics_overview.month_end_month: 6 months ago for 6 months
+        #inventory_metrics_overview.month_end_month: 6 months ago for 6 months
+        inventory_metrics_overview.month_end_month: "2022-06-01 to 2022-11-30"
       sorts: [inventory_metrics_overview.sum_inventory_value desc]
       limit: 5
       column_limit: 5
@@ -606,7 +607,8 @@
       fields: [inventory_metrics_overview.material_group_name_wgbez, inventory_metrics_overview.month_end_month,
         inventory_metrics_overview.average_inventory_turn]
       filters:
-        inventory_metrics_overview.month_end_month: 6 months ago for 6 months
+        #inventory_metrics_overview.month_end_month: 6 months ago for 6 months
+        inventory_metrics_overview.month_end_month: "2022-06-01 to 2022-11-30"
       sorts: [inventory_metrics_overview.material_group_name_wgbez, inventory_metrics_overview.month_end_month]
       limit: 2000
       column_limit: 50
