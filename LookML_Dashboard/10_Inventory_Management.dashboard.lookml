@@ -13,7 +13,8 @@
     type: looker_pie
     fields: [inventory_by_plant.stock_characteristic, inventory_by_plant.sum_inventory_value_target_currency]
     filters:
-      inventory_by_plant.week_end_date: today
+      #inventory_by_plant.week_end_date: today
+      inventory_by_plant.week_end_date: "2022-06-15"
     sorts: [inventory_by_plant.sum_inventory_value_target_currency desc 0]
     limit: 500
     column_limit: 50
@@ -54,7 +55,9 @@
     type: single_value
     fields: [inventory_by_plant.sum_obsolete_value_target_currency, inventory_by_plant.sum_inventory_value_target_currency]
     filters:
-      inventory_by_plant.week_end_date: today
+      #inventory_by_plant.week_end_date: today
+      inventory_by_plant.week_end_date: "2022-06-15"
+
     limit: 500
     column_limit: 50
     custom_color_enabled: true
@@ -98,7 +101,9 @@
     fields: [inventory_metrics_overview.sum_slow_moving_inventory_target_currency,
       inventory_metrics_overview.sum_inventory_value_target_currency]
     filters:
-      inventory_metrics_overview.month_end_month: last month
+      #inventory_metrics_overview.month_end_month: last month
+      inventory_metrics_overview.month_end_month: "2022-05"
+
     limit: 500
     column_limit: 50
     custom_color_enabled: true
