@@ -257,7 +257,8 @@
     fields: [inventory_metrics_overview.month_end_month, inventory_metrics_overview.sum_inventory_value_target_currency]
     fill_fields: [inventory_metrics_overview.month_end_month]
     filters:
-      inventory_metrics_overview.month_end_month: 12 months ago for 12 months
+      #inventory_metrics_overview.month_end_month: 12 months ago for 12 months
+      inventory_metrics_overview.month_end_month: "2022-01-01 to 2022-12-31"
     sorts: [inventory_metrics_overview.month_end_month]
     limit: 12
     column_limit: 50
@@ -339,7 +340,8 @@
     pivots: [inventory_metrics_overview.material_type]
     fill_fields: [inventory_metrics_overview.month_end_month]
     filters:
-      inventory_metrics_overview.month_end_month: 12 months ago for 12 months
+      #inventory_metrics_overview.month_end_month: 12 months ago for 12 months
+      inventory_metrics_overview.month_end_month: "2022-01-01 to 2022-12-31"
     sorts: [inventory_metrics_overview.material_type, inventory_metrics_overview.month_end_month]
     limit: 12
     column_limit: 50
